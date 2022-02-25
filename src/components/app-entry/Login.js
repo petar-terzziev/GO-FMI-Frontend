@@ -26,7 +26,12 @@ const location = useLocation();
 //     dispatch(userActions.logout()); 
 // }, []);
 
+<<<<<<< HEAD
 //this is a test commit
+=======
+//Test message #2
+
+>>>>>>> bd0c822ad42657c3a0e32fb7eb9c781eb30f2087
 
 function handleChange(e) {
     const { name, value } = e.target;

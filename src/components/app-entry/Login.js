@@ -26,6 +26,8 @@ const location = useLocation();
 //     dispatch(userActions.logout()); 
 // }, []);
 
+//this is a test commit
+
 function handleChange(e) {
     const { name, value } = e.target;
     setInputs(inputs => ({ ...inputs, [name]: value }));

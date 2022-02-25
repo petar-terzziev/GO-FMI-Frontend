@@ -26,6 +26,9 @@ const location = useLocation();
 //     dispatch(userActions.logout()); 
 // }, []);
 
+//Test message #2
+
+
 function handleChange(e) {
     const { name, value } = e.target;
     setInputs(inputs => ({ ...inputs, [name]: value }));

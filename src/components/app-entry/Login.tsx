@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Link, useLocation } from 'react-router-dom';
@@ -42,7 +42,7 @@ function handleSubmit(e) {
         // get return url from location state or default to home page
         const { from } = location.state || { from: { pathname: "/" } };
         dispatch({type: userConstants.LOGIN_REQUEST, user: {email, password, from}});
-        dispatch({type: userConstants.SET_USER, decoded:  jwt_decode(localStorage.getItem('jwtToken'))});
+        dispatch({type: userConstants.SET_USER, decoded:  jwt_decode(localStorage.getItem('jwtToken') as string)});
       }
 }
 
